@@ -1,9 +1,9 @@
 const express = require("express"); // used to import the dependencies
 const format = require("date-format");
 
-const app = express(); //
+const app = express();
 
-const PORT = 4000 || process.env.PORT;
+const PORT = process.env.PORT || 4000;
 
 app.get("/", (req, res) => {
   res.status(201).send("<h1>hello from mansi</h1>");
@@ -29,6 +29,17 @@ app.get("/api/v1/facebook", (req, res) => {
   };
 
   res.status(200).json(fackSocial);
+});
+
+app.get("/api/v1/linkedin", (req, res) => {
+  const linkedinSocial = {
+    username: "mansi_prajapati",
+    followers: 1220,
+    followa: 200,
+    date: format.asString("dd[MM] - hh:mm:ss", new Date()),
+  };
+
+  res.status(200).json(linkedinSocial);
 });
 
 app.get("/api/v1/linkedin", (req, res) => {
