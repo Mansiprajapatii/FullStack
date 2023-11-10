@@ -42,17 +42,6 @@ app.get("/api/v1/linkedin", (req, res) => {
   res.status(200).json(linkedinSocial);
 });
 
-app.get("/api/v1/linkedin", (req, res) => {
-  const linkedinSocial = {
-    username: "mansi_prajapati",
-    followers: 1220,
-    followa: 200,
-    date: format.asString("dd[MM] - hh:mm:ss", new Date()),
-  };
-
-  res.status(200).json(linkedinSocial);
-});
-
 app.listen(PORT, () => {
   console.log("Server listening...");
 });
