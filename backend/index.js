@@ -20,18 +20,6 @@ app.get("/api/v1/instagram", (req, res) => {
   res.status(200).json(instaSocial);
 });
 
-
-app.get("/api/v1/facebook", (req, res) => {
-  const fackSocial = {
-    username: "mansi_pra",
-    followers: 2,
-    followa: 0,
-    date: format.asString("dd[MM] - hh:mm:ss", new Date()),
-  };
-
-  res.status(200).json(fackSocial);
-});
-
 app.get("/api/v1/facebook", (req, res) => {
   const fackSocial = {
     username: "mansi_pra",
