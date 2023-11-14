@@ -9,6 +9,10 @@ app.get("/", (req, res) => {
   res.status(201).send("<h1>hello from mansi</h1>");
 });
 
+app.get("/", (req, res) => {
+  res.status(201).send("<h1>hello from mansi</h1>");
+});
+
 app.get("/api/v1/instagram", (req, res) => {
   const instaSocial = {
     username: "mansi",
