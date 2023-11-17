@@ -3,6 +3,12 @@ const userSchema = new mongoose.Schema({
   firstname: {
     type: String,
     default: null,
+    required: true,
+  },
+
+  middlename: {
+    type: String,
+    default: null,
   },
 
   lastname: {
