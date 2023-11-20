@@ -28,4 +28,8 @@ const userSchema = new mongoose.Schema({
     unique: true,
     required: true,
   },
+
+  token: {
+    type: String,
+  },
 });
